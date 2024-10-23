@@ -1,0 +1,158 @@
+<html>
+  <head><link rel="icon" src="Bindey.png" alt="favicon.ico"></head>
+  <div id="container">
+	  <header>
+	 	  <p>Cheater Site</p>
+	  </header>
+	  <div class="topnav" id="myTopNav">
+	    <a onclick="blank()" class="gb">about:blank</a>
+		  <a href="#home" class="bookmarks">Home</a>
+		  <a href="#games" class="bookmarks">Games</a>
+		  <a href="#apps" class="bookmarks">Apps</a>
+	  </div>
+	  <br>
+	  <div class="topnav">
+		  <a onclick="game('plexy')" class="bookmarks">Plexygames</a>
+		  <a onclick="game('hypackel')" class="bookmarks">hypackel</a>
+		  <a onclick="game('code')" class="bookmarks">SANS FIGHT</a>
+		  <a onclick="game('code')" class="bookmarks">Cookie Clicker</a>
+	  </div>
+	  <hr id="home">
+	  <div class="games">
+		  <embed width="100%" height="500px" src="https://www.plexygames.com" id="game">
+		  <!-- Home Section -->
+		  <div class="center">
+			  <h3>Welcome to Cheater Sites</h3><br>
+			  <div>
+			  	<h4><b>Who am I anymore?</b>
+			  	</h4>
+			  </div>
+			  <div>
+				  <footer>
+					  <hr />
+					  <div id="contact-about">
+						  <hr>
+						  <div>
+							  <p>Copyright &copy; 2023 All Rights Reserved by Natu1108
+							  </p>
+						  </div>
+					  </div>
+				  </footer>
+			  </div>
+			</div>
+	  </div>
+	</div>
+	<script>
+	  function game(id) {
+	    if (id == "hypackel") {
+	      document.getElementById("game").src = "https://d3rtzzzsiu7gdr.cloudfront.net/games.html";
+	    }
+	    else if (id == "plexy") {
+	      document.getElementById("game").src = "https://www.plexygames.com/";
+	    }
+	    else if (id == "code") {
+	      document.getElementById("game").src = "https://gotoanddie.github.io/c2-sans-fight/";
+	    }
+    }
+    function blank() {
+      var urlobj = new window.URL(window.location.href);
+      var url = "index.html"
+      if (url) {
+        var win;
+        document.querySelector('a').onclick = function() {
+          if (win) {
+            win.focus();
+          }
+          else {
+            win = window.open();
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.style.margin = '0';
+            iframe.src = url
+            win.document.body.appendChild(iframe);
+          }
+          document.querySelector('a').style.background = 'black';
+          document.querySelector('a').innerHTML = 'index';
+          
+        }
+      }
+    }
+	</script>
+	<style>
+	  @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+
+  * {
+	  box-sizing: border-box;
+	  font-family: "Source Sans Pro", Source Sans;
+  }
+  
+  #container {
+	  margin: 12px auto;
+	  width: 75%;
+  }
+
+  header {
+	  padding: 5% 40%;
+	  text-align: center;
+	  background: url("https://media.istockphoto.com/vectors/computer-games-seamless-background-vector-id528711245?b=1&k=6&m=528711245&s=612x612&w=0&h=zKGpDrFzAtNBAkze6CneYPH2cPtjgTIm94yJKalnpUc=");
+  }
+
+  header p {
+	  color: white;
+	  font-size: 30px;
+	  padding: 5%;
+	  margin: 5% 0px;
+	  background: rgba(0, 0, 0, 0.8);
+  }
+
+  .topnav {
+	  padding: 20px;
+	  text-align: center;
+	  background: url("https://i.pinimg.com/originals/79/73/e9/7973e9a92e0ce745a60614beceba961f.gif");
+  }
+
+  .bookmarks {
+	  display: inline-block;
+	  border-radius: 10px;
+	  color: white;
+	  padding: 1% 2%;
+	  text-align: center;
+	  text-decoration: none;
+	  margin: 0px 3%;
+  }
+
+  .bookmarks:hover {
+	  background-image: linear-gradient(
+		  to right,
+		  rgba(255, 0, 0, 0.7),
+		  rgba(98, 52, 140, 0.7)
+	  );
+  }
+
+  #contact-about {
+	  background-color: #26272b;
+	  margin: 3% 0px;
+	  padding: 2.5%;
+	  font-size: 15px;
+	  line-height: 24px;
+	  color: white;
+  }
+  
+  .gb {
+	  display: inline-block;
+	  cursor: pointer;
+	  border-radius: 10px;
+	  color: white;
+	  background-color: black;
+	  padding: 1% 2%;
+	  text-align: center;
+	  text-decoration: none;
+	  margin: 0px 3%;
+  }
+
+	</style>
+</html>
