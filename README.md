@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Natu1108
 - 👀 I’m interested in Coding.
-- 🌱 I’m currently learning HTML, Python, etc.
+- 🌱 I’m currently learning HTML, Python, and Java
 - 😄 Pronouns: He/Him
 - ⚡ Fun fact: I also have a Scratch account, for anyone who is interested.
 
